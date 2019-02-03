@@ -1,0 +1,4 @@
+name: MD template
+description: >
+   A template for coding in RMarkdown
+create_dir: FALSE
