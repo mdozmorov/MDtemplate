@@ -11,7 +11,7 @@ devtools::install_github("mdozmorov/MDtemplate")
 
 Use: In your RStudio session, select "File / New file / R Markdown / From Template / MD template". It will create the Rmd document with the following structure:
 
-`
+````
 ---
 title: "Demo Document"
 author: "Author's Name"
@@ -49,4 +49,4 @@ options(stringsAsFactors = FALSE)
 xfun::session_info()
 ```
 
-`
+````
