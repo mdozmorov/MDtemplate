@@ -21,6 +21,11 @@ output:
 
 # Research Strategy
 
++-------+
+| ![](img/figure01_overview.tif)      |
+| **Figure 1. Overview.** Brief legend. |
++-------+
+
 # Significance
 
 # Innovation
