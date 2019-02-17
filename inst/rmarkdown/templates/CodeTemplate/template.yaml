@@ -1,4 +1,4 @@
-name: MD template
+name: Code template
 description: >
-   A template for coding in RMarkdown
+   Code template in RMarkdown
 create_dir: FALSE
