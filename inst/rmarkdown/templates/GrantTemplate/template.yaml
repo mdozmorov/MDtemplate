@@ -1,4 +1,4 @@
 name: GrantTemplate
 description: >
    Grant template in RMarkdown
-create_dir: TRUE
+create_dir: FALSE
