@@ -1,0 +1,22 @@
+---
+title: "Title"
+author: "Author"
+date: "Date"
+# http://deic.uab.es/~iblanes/beamer_gallery/
+output:
+  beamer_presentation:
+    fonttheme: structurebold
+    # theme: AnnArbor
+    # colortheme: dolphin
+    # theme: boxes
+    # colortheme: whale
+    theme: CambridgeUS
+    colortheme: dolphin
+    # theme: Madrid
+    # colortheme: orchid
+    fig_caption: no
+    fig_height: 6
+    fig_width: 7
+---
+
+<!-- Example: https://github.com/mdozmorov/beamer_template/blob/master/presentation.Rmd -->
