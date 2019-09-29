@@ -1,6 +1,6 @@
 ---
 # All BibTex reference files
-bibliography: [/Users/mdozmorov/Documents/Work/VCU_grants/1_Dozmorov/3D_refs.bib,/Users/mdozmorov/Documents/Work/VCU_grants/1_Dozmorov/brain.bib,/Users/mdozmorov/Documents/Work/VCU_grants/1_Dozmorov/BRCA.bib,/Users/mdozmorov/Documents/Work/VCU_grants/1_Dozmorov/education.bib,/Users/mdozmorov/Documents/Work/VCU_grants/1_Dozmorov/enrichment.bib,/Users/mdozmorov/Documents/Work/VCU_grants/1_Dozmorov/networks.bib,/Users/mdozmorov/Documents/Work/VCU_grants/1_Dozmorov/statistics.bib]
+bibliography: [/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/3D_refs.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/brain.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/BRCA.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/education.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/enrichment.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/networks.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/statistics.bib]
 # Reference template
 csl: /Users/mdozmorov/Documents/Work/presentations/Templates/grant_template/styles.ref/genomebiology.csl
 # Output template
@@ -95,4 +95,8 @@ ggplot(df_melted, aes(value, task)) +
 # see ?strptime if you want your date in a different format
 # see http://docs.ggplot2.org/current/scale_date.html if you want to adjust the x-axis
 ```
+<!-- Regex for searching references
+\[[a-zA-Z0-9@\-;: ]+\]
+-->
+
 # References
