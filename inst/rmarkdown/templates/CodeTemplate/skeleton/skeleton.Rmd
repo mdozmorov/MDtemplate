@@ -1,6 +1,6 @@
 ---
-title: "Demo Document"
-author: "Author's Name"
+title: "Analysis"
+author: "Mikhail Dozmorov"
 date: "`r Sys.Date()`"
 output:
   pdf_document:
