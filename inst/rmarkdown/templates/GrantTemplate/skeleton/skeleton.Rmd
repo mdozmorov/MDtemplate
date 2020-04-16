@@ -1,7 +1,7 @@
 ---
-# All BibTex reference files
-bibliography: [/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/3D_refs.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/brain.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/BRCA.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/education.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/enrichment.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/networks.bib,/Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/statistics.bib]
-# Reference template
+# BibTex reference file. Multiple files can be separated by commas and wrapped into []
+bibliography: /Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/references/references_MD.bib
+# Citation format
 csl: /Users/mdozmorov/Documents/Work/presentations/Templates/grant_template/styles.ref/genomebiology.csl
 # Output template
 output: 
@@ -46,18 +46,13 @@ output:
 
 ```{r fig.height=2, fig.width=8, echo=FALSE, dpi=300, cache=TRUE, warning=FALSE}
 # https://davetang.org/muse/2017/02/03/gantt-chart-using-r/
-
+# Load libraries and clear workspace.
 # install.packages('ggplot2')
 # install.packages('reshape2')
-
-# Load libraries and clear workspace.
-
 library(reshape2)
 library(ggplot2)
-# rm(list = ls())
 
 # Create your tasks as vectors in the format name, start date, and end date.
-
 task1 <- c('1. Developing the method for joint normalization of multiple Hi-C datasets',  '2019-07-01', '2020-06-30')
 task2 <- c('2. Adaptating the empirical Bayes approach for differential analysis of multiple Hi-C datasets',  '2019-07-01', '2022-06-30')
 task3 <- c('3. Implementing the methods as R and Python software', '2019-07-01', '2023-06-30')
@@ -65,9 +60,6 @@ task4 <- c('4. Evaluate the methods and the tools using published Hi-C data',  '
 # task7 <- c('Education objective 4', '2020-01-01', '2022-12-31')
 
 # Create a data frame with appropriate classes.
-
-# df <- as.data.frame(t(sapply(ls(pattern = '^task\\d'), function(x) eval(parse(text = x)))), row.names = FALSE)
-
 df <- as.data.frame(rbind(task4, task3, task2, task1)) # task7, task6, task5, 
 names(df) <- c('task', 'start', 'end')
 df$task <- factor(df$task, levels = df$task)
@@ -76,7 +68,6 @@ df$end <- as.Date(df$end)
 df_melted <- melt(df, measure.vars = c('start', 'end'))
 
 # Create the plot.
-
 # starting date to begin plot
 start_date <- as.Date('2019-07-01')
 
@@ -95,8 +86,5 @@ ggplot(df_melted, aes(value, task)) +
 # see ?strptime if you want your date in a different format
 # see http://docs.ggplot2.org/current/scale_date.html if you want to adjust the x-axis
 ```
-<!-- Regex for searching references
-\[[a-zA-Z0-9@\-;: ]+\]
--->
 
 # References
