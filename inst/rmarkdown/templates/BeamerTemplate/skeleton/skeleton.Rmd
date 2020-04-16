@@ -1,7 +1,7 @@
 ---
 title: "Title"
-author: "Author"
-date: "Date"
+author: "Mikhail Dozmorov"
+date: "Spring 2018"
 # http://deic.uab.es/~iblanes/beamer_gallery/
 output:
   beamer_presentation:
@@ -20,3 +20,94 @@ output:
 ---
 
 <!-- Example: https://github.com/mdozmorov/beamer_template/blob/master/presentation.Rmd -->
+
+# Section title
+
+## Insert image using LaTeX
+
+\begin{center}
+\includegraphics[height=100px]{img/bioinfo3.png}
+\end{center}
+<!--https://bioinformatics.uconn.edu/wp-content/uploads/sites/15/2013/06/bioinfo3.png-->
+
+## Insert image using knitr
+
+```{r echo=FALSE, out.width='100%'}
+knitr::include_graphics('img/bioinfo3.png')
+```
+
+
+## Slide with bulletpoints
+
+- DNA
+
+- mRNA
+- miRNA
+
+- Protein
+
+## Slide with table
+
+<!--Generate tables with https://www.tablesgenerator.com/markdown_tables-->
+
+111     222         333
+---- ------- ----------
+aaa     bbb         ccc
+
+## Slide with code formatting
+
+`monospace formatting`
+
+```
+a <- b
+```
+
+    four spaces also make text monospace
+
+## Two columns
+
+\begin{columns}
+\begin{column}{0.48\textwidth}
+
+This slide has two columns
+
+\bigskip
+
+Can add an extra line
+
+\begin{itemize}
+  \item And, bulletpoints
+  \item One after another
+\end{itemize}
+
+\end{column}
+\begin{column}{0.48\textwidth}
+
+\includegraphics[height=100px]{img/code.png}
+
+\end{column}
+\end{columns}
+
+## Font sizes
+
+\tiny Tiny
+
+\scriptsize Not so tiny
+
+\footnotesize Footnote size
+
+\small Small
+
+\normalsize Default
+
+\large Large
+
+\Large Larger
+
+\LARGE Largest
+
+## Font sizes
+
+\huge Huge
+
+\Huge More huge
