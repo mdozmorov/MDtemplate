@@ -21,16 +21,22 @@ library(dplyr)
 options(stringsAsFactors = FALSE)
 ```
 
+# Libraries
+
 ```{r libraries}
 
 ```
+
+# Settings
 
 ```{r settings}
 
 ```
 
+# Load data
 
+```{r data}
 
-```{r session_info}
-xfun::session_info()
 ```
+
+
