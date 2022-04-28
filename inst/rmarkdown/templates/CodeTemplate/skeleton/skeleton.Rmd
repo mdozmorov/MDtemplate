@@ -17,26 +17,34 @@ opts_chunk$set(cache.path='cache/', fig.path='img/', cache=F, tidy=T, fig.keep='
 library(pander)
 panderOptions('table.split.table', Inf)
 set.seed(1)
-library(dplyr)
-options(stringsAsFactors = FALSE)
 ```
 
 # Libraries
 
 ```{r libraries}
+library(tidyverse)
+library(readxl)
+library(writexl)
 
 ```
 
 # Settings
 
 ```{r settings}
+# Project folder path
+dir_data <- ""
 
+# Input files
+fileNameIn1 <- file.path(dir_data, "")
+# Output files
+fileNameOut1 <- file.path(dir_data, "")
 ```
 
 # Load data
 
 ```{r data}
-
+# Read in data
+mtx <- read_csv(fileNameIn1)
 ```
 
 
