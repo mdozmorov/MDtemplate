@@ -25,6 +25,12 @@ set.seed(1)
 library(tidyverse)
 library(readxl)
 library(writexl)
+library(cowplot)
+library(stringr)
+library("ggsci")
+library(scales)
+# scales::show_col(pal_lancet("lanonc")(8))
+mycols = pal_lancet("lanonc")(8)
 
 ```
 
