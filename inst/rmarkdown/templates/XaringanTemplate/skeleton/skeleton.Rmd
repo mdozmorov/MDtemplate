@@ -1,13 +1,13 @@
 ---
 title: "Presentation title"
 subtitle: "subtitle"
-author: "Mikhail Dozmorov"
-institute: "Virginia Commonwealth University"
+author: "Author Name"
+institute: "XYZ University"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["css/xaringan-themer.css", "css/xaringan-my.css"]
+    css: ["xaringan-themer.css", "xaringan-my.css"]
     nature:
       ratio: '16:9'
       highlightStyle: github
@@ -28,24 +28,36 @@ mono_light(
 )
 ```
 
+
 class: center, middle
 
 # Welcome
----
 
+---
 class: inverse, center, middle
 
-# Centered, negative image
+# Welcome, negative image
+
 ---
 
 # Regular slide
 
 Part 1 with image  
-.center[<img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Stray_kitten_Rambo002.jpg" width = 300>]
+
+.center[ <img src="img/640px-Pedia-still-7.jpg" height = 280> ]
+<!-- https://en.wikipedia.org/wiki/Wikipedia:Books#/media/File:Pedia-still-7.jpg -->
+
+<font size="5">
+Font size manipulation
+</font>
+
 --
+
 Incremental part 2 <sup>1</sup>
 
-.small[some small text]
+.footnote[
+[1] Footnote example
+]
 
 ---
 
@@ -53,23 +65,78 @@ Incremental part 2 <sup>1</sup>
 
 Something can be written full-width
 
-.pull-left[ Column 1 ]
+.pull-left[
+Column 1
+]
 
-.pull-right[ Column 2 ]
+.pull-right[
+Column 2
+]
+
+---
+# Another slide with two columns
+
+<div style="float: left; width: 50%;">
++ This text is on the left
+</div>
+
+<div style="float: right; width: 50%;">
+<center><img src="img/640px-Great_Books.jpg" height="300px" /></center>
+</div>
+<!-- https://en.wikipedia.org/wiki/Great_Books_of_the_Western_World#/media/File:Great_Books.jpg -->
 
 ---
 # Embedded video
 
 <iframe width="1000" height = "600" src="https://www.youtube.com/embed/yny5PFuKDbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-.footnote[ [1] Footnote example ]
+---
+# xaringanExtra: editable slide
+
+.can-edit[
+- cat
+- dog
+]
 
 ---
-# https://github.com/gadenbuie/xaringanExtra
-library(xaringanExtra)
+# xaringanExtra: tabbed slide
+.panelset[
+.panel[.panel-name[First tab]
+
+Text on the first panel
+]
+
+.panel[.panel-name[Second tab]
+
+Text on the second panel
+]
+]
+
+```{r xaringanExtra, echo=FALSE}
+xaringanExtra::use_xaringan_extra(c("editable", "panelset"))
+```
+
+---
+# xaringanExtra: Nice citation
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+The only way to write good code is to write tons of bad code first. 
+Feeling shame about bad code stops you from getting to good code
+
+.tr[
+— Hadley Wickham
+]]
+
+---
+# xaringanExtra 2
+
+```{r}
+plot(cars)
 ```
 
 ```{r xaringan-editable, echo=FALSE}
+# https://github.com/gadenbuie/xaringanExtra
+library(xaringanExtra)
 # Make your slides editable
 xaringanExtra::use_editable(expires = 1)
 ```
@@ -93,3 +160,4 @@ xaringanExtra::use_webcam()
 # To add copy-to-clipboard
 xaringanExtra::use_clipboard()
 ```
+
