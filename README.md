@@ -17,6 +17,12 @@ A template with Rmd header and footer from https://github.com/mdozmorov/MDmisc.
 
 A template with YAML header containing BibTex bibliography, reference formatting, and Word output template. Includes basic grant structure, and an R code for timeline Gantt chart.
 
-## Beamer template. [Example](inst/rmarkdown/templates/BeamerTemplate/skeleton/skeleton.Rmd)
+## Xaringan presentation template
 
-A template for a PDF presentation using Beamer formatting (theme, color). Examples of slide formatting are at https://github.com/mdozmorov/beamer_template/blob/master/presentation.Rmd
+A template for a [Xaringan](https://CRAN.R-project.org/package=xaringan) HTML presentation. Examples of columns, image/video embedding, panels, footnotes, other tweaks using [XaringanExtra](https://github.com/gadenbuie/xaringanExtra). Presentation [example](https://mdozmorov.github.io/Talk_3Dgenome/).
+
+# No longer using
+
+## Beamer presentation template. [Example](inst/rmarkdown/templates/BeamerTemplate/skeleton/skeleton.Rmd)
+
+A template for a PDF presentation using Beamer formatting (theme, color). Examples of slide formatting are at https://github.com/mdozmorov/beamer_template/blob/master/presentation.pdf
