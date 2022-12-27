@@ -1,0 +1,55 @@
+---
+# Output template, http://rmarkdown.rstudio.com/articles_docx.html
+output: 
+  word_document:
+    reference_docx: !expr system.file("extdata", "styles.doc", "NIH_grant_style.docx", package = "MDtemplate", mustWork = TRUE)
+# Citation format, https://www.zotero.org/styles
+# csl: !expr system.file("extdata/styles.ref/bioinformatics.csl", package = "MDtemplate")  
+csl: "/Users/mdozmorov/Library/R/x86_64/4.2/library/MDtemplate/extdata/styles.ref/bioinformatics.csl"
+# BibTex reference file. Multiple files can be separated by commas and wrapped into []
+# bibliography: !expr system.file("extdata/references/references_MD.bib", package = "MDtemplate")
+bibliography: "/Users/mdozmorov/Library/R/x86_64/4.2/library/MDtemplate/extdata/references/references_MD.bib"
+---
+
+
+Authors
+
+# Abstract
+
+### Keywords
+
+# Introduction
+
+# Methods
+
+# Results
+
+How to insert single [@Dozmorov:2016aa][@Glass:2016aa] or multiple references [@Dozmorov:2016aa; @Glass:2016aa].
+
+```{r echo=FALSE, fig.cap="Figure 1 legend"}
+# https://yihui.org/knitr/options/#plots
+knitr::include_graphics(system.file("extdata", "chicken.png", package = "MDtemplate"))
+```
+
++-------+
+| ![](`r system.file("extdata", "chicken.png", package = "MDtemplate")`) |  
+| **Figure 1. How to insert a figure.** Chicken chicken chicken. |
++-------+
+
+# Discussion
+
+# Abbreviations
+
+# Acknowledgements
+
+_Conflict of Interest._ None.
+
+# Funding
+
+# Tables
+
+# Figure legends
+
+# Supplementary material
+
+# References

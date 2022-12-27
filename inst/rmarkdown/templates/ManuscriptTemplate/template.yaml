@@ -1,0 +1,4 @@
+name: ManuscriptTemplate
+description: >
+   Manuscript template in RMarkdown
+create_dir: FALSE

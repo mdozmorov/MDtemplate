@@ -1,13 +1,12 @@
 Package: MDtemplate
 Type: Package
-Title: Templates for code, grants, and Xaringan/Beamer presentations
-Version: 0.1.1
+Title: Templates for code, grants, manuscripts, and Xaringan/Beamer presentations
+Version: 0.1.2
 Author: Mikhail Dozmorov <mikhail.dozmorov@vcuhealth.org>
 Maintainer: Mikhail Dozmorov <mikhail.dozmorov@vcuhealth.org>
 Description: Templates for code, grants, and Xaringan/Beamer presentations. 
     Installs as a template package. When creating new RMarkdown documents from
-    a template, these templates show as 'CodeTemplate', 'GrantTemplate',
-    'XaringanTemplate', 'BeamerTemplate'.
+    a template, these templates show as, 'CodeTemplate', 'GrantTemplate',
+    'ManuscriptTemplate', 'XaringanTemplate', 'BeamerTemplate'.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
