@@ -1,12 +1,48 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Mikhail Dozmorov at 2024-02-21 12:47:46 -0500 
+%% Created for Mikhail Dozmorov at 2024-02-25 08:14:30 -0500 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Zhou:2022aa,
+	abstract = {To learn how genomic sequence influences multiscale three-dimensional (3D) genome architecture, this manuscript presents a sequence-based deep-learning approach, Orca, that predicts directly from sequence the 3D genome architecture from kilobase to whole-chromosome scale. Orca captures the sequence dependencies of structures including chromatin compartments and topologically associating domains, as well as diverse types of interactions from CTCF-mediated to enhancer-promoter interactions and Polycomb-mediated interactions with cell-type specificity. Orca enables various applications including predicting structural variant effects on multiscale genome organization and it recapitulated effects of experimentally studied variants at varying sizes (300 bp to 90 Mb). Moreover, Orca enables in silico virtual screens to probe the sequence basis of 3D genome organization at different scales. At the submegabase scale, it predicted specific transcription factor motifs underlying cell-type-specific genome interactions. At the compartment scale, virtual screens of sequence activities suggest a model for the sequence basis of chromatin compartments with a prominent role of transcription start sites.},
+	author = {Zhou, Jian},
+	date-added = {2024-02-25 07:22:50 -0500},
+	date-modified = {2024-02-25 07:22:50 -0500},
+	doi = {10.1038/s41588-022-01065-4},
+	journal = {Nat Genet},
+	journal-full = {Nature genetics},
+	mesh = {Chromatin; Chromosomes; Genome; Polycomb-Group Proteins; Promoter Regions, Genetic; Transcription Factors},
+	month = {May},
+	number = {5},
+	pages = {725-734},
+	pmc = {PMC9186125},
+	pmid = {35551308},
+	pst = {ppublish},
+	title = {Sequence-based modeling of three-dimensional genome architecture from kilobase to chromosome scale},
+	volume = {54},
+	year = {2022},
+	bdsk-url-1 = {https://doi.org/10.1038/s41588-022-01065-4}}
+
+@article{Chilinski:2024aa,
+	author = {Mateusz Chili{\'n}ski and Dariusz Plewczynski},
+	date = {2024/01/01},
+	date-added = {2024-02-25 07:01:24 -0500},
+	date-modified = {2024-02-25 07:01:24 -0500},
+	doi = {10.1101/2024.02.01.578389},
+	journal = {bioRxiv},
+	month = {01},
+	n2 = {Prediction of chromatin interactions from DNA sequence has been a significant research challenge in the last couple of years. Several solutions have been proposed, most of which are based on encoder-decoder architecture, where 1D sequence is convoluted, encoded into the latent representation, and then decoded using 2D convolutions into the Hi-C pairwise chromatin spatial proximity matrix. Those methods, while obtaining high correlation scores and improved metrics, produce Hi-C matrices that are artificial - they are blurred due to the deep learning model architecture. In our study, we propose the HiCDiffusion model that addresses this problem. We first train the encoder-decoder neural network and then use it as a component of the diffusion model - where we guide the diffusion using a latent representation of the sequence, as well as the final output from the encoder-decoder. That way, we obtain the high-resolution Hi-C matrices that not only better resemble the experimental results - improving the Fr{\'e}chet inception distance by an average of 12 times, with the highest improvement of 35 times - but also obtain similar classic metrics to current state-of-the-art encoder-decoder architectures used for the task.Competing Interest StatementThe authors have declared no competing interest.},
+	pages = {2024.02.01.578389},
+	title = {HiCDiffusion - diffusion-enhanced, transformer-based prediction of chromatin interactions from DNA sequences},
+	url = {http://biorxiv.org/content/early/2024/02/05/2024.02.01.578389.abstract},
+	year = {2024},
+	bdsk-url-1 = {http://biorxiv.org/content/early/2024/02/05/2024.02.01.578389.abstract},
+	bdsk-url-2 = {https://doi.org/10.1101/2024.02.01.578389}}
 
 @article{Avsec:2021aa,
 	abstract = {How noncoding DNA determines gene expression in different cell types is a major unsolved problem, and critical downstream applications in human genetics depend on improved solutions. Here, we report substantially improved gene expression prediction accuracy from DNA sequences through the use of a deep learning architecture, called Enformer, that is able to integrate information from long-range interactions (up to 100 kb away) in the genome. This improvement yielded more accurate variant effect predictions on gene expression for both natural genetic variants and saturation mutagenesis measured by massively parallel reporter assays. Furthermore, Enformer learned to predict enhancer-promoter interactions directly from the DNA sequence competitively with methods that take direct experimental data as input. We expect that these advances will enable more effective fine-mapping of human disease associations and provide a framework to interpret cis-regulatory evolution.},
