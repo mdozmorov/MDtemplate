@@ -1,12 +1,46 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Mikhail Dozmorov at 2024-02-25 08:14:30 -0500 
+%% Created for Mikhail Dozmorov at 2024-03-02 07:43:36 -0500 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Chyr:2021aa,
+	abstract = {Topologically associating domains, or TADs, play important roles in genome organization and gene regulation; however, they are often altered in diseases. High-throughput chromatin conformation capturing assays, such as Hi-C, can capture domains of increased interactions, and TADs and boundaries can be identified using well-established analytical tools. However, generating Hi-C data is expensive. In our study, we addressed the relationship between multi-omics data and higher-order chromatin structures using a newly developed machine-learning model called PredTAD. Our tool uses already-available and cost-effective datatypes such as transcription factor and histone modification ChIPseq data. Specifically, PredTAD utilizes both epigenetic and genetic features as well as neighboring information to classify the entire human genome as boundary or non-boundary regions. Our tool can predict boundary changes between normal and breast cancer genomes. Among the most important features for predicting boundary alterations were CTCF, subunits of cohesin (RAD21 and SMC3), and chromosome number, suggesting their roles in conserved and dynamic boundaries formation. Upon further analysis, we observed that genes near altered TAD boundaries were found to be involved in several important breast cancer signaling pathways such as Ras, Jak-STAT, and estrogen signaling pathways. We also discovered a TAD boundary alteration that contributes to RET oncogene overexpression. PredTAD can also successfully predict TAD boundary changes in other conditions and diseases. In conclusion, our newly developed machine learning tool allowed for a more complete understanding of the dynamic 3D chromatin structures involved in signaling pathway activation, altered gene expression, and disease state in breast cancer cells.},
+	author = {Chyr, Jacqueline and Zhang, Zhigang and Chen, Xi and Zhou, Xiaobo},
+	date-added = {2024-03-02 07:43:29 -0500},
+	date-modified = {2024-03-02 07:43:29 -0500},
+	doi = {10.1016/j.csbj.2021.05.013},
+	journal = {Comput Struct Biotechnol J},
+	journal-full = {Computational and structural biotechnology journal},
+	keywords = {3D chromatin architecture; Breast cancer; Chromatin organization; Computational biology; Epigenetics; Estrogen signaling pathways; Machine learning; TAD boundaries; Topologically associated domains},
+	pages = {2870-2880},
+	pmc = {PMC8142020},
+	pmid = {34093998},
+	pst = {epublish},
+	title = {PredTAD: A machine learning framework that models 3D chromatin organization alterations leading to oncogene dysregulation in breast cancer cell lines},
+	volume = {19},
+	year = {2021},
+	bdsk-url-1 = {https://doi.org/10.1016/j.csbj.2021.05.013}}
+
+@article{Mao:2017aa,
+	author = {Weiguang Mao and Dennis Kostka and Maria Chikina},
+	date = {2017/01/01},
+	date-added = {2024-03-01 10:52:40 -0500},
+	date-modified = {2024-03-01 10:52:40 -0500},
+	doi = {10.1101/219667},
+	journal = {bioRxiv},
+	month = {01},
+	n2 = {Background Gene regulatory sequences play critical roles in ensuring tightly controlled RNA expression patterns that are essential in a large variety of biological processes. Specifically, enhancer sequences drive expression of their target genes, and the availability of genome-wide maps of enhancer-promoter interactions has opened up the possibility to use machine learning approaches to extract and interpret features that define these interactions in different biological contexts.Methods Inspired by machine translation models we develop an attention-based neural network model, EPIANN, to predict enhancer-promoter interactions based on DNA sequences. Codes and data are available at https://github.com/wgmao/EPIANN.Results Our approach accurately predicts enhancer-promoter interactions across six cell lines. In addition, our method generates pairwise attention scores at the sequence level, which specify how short regions in the enhancer and promoter pair-up to drive the interaction prediction. This allows us to identify over-represented transcription factors (TF) binding sites and TF-pair interactions in the context of enhancer function.},
+	pages = {219667},
+	title = {Modeling Enhancer-Promoter Interactions with Attention-Based Neural Networks},
+	url = {http://biorxiv.org/content/early/2017/11/14/219667.abstract},
+	year = {2017},
+	bdsk-url-1 = {http://biorxiv.org/content/early/2017/11/14/219667.abstract},
+	bdsk-url-2 = {https://doi.org/10.1101/219667}}
 
 @article{Zhou:2022aa,
 	abstract = {To learn how genomic sequence influences multiscale three-dimensional (3D) genome architecture, this manuscript presents a sequence-based deep-learning approach, Orca, that predicts directly from sequence the 3D genome architecture from kilobase to whole-chromosome scale. Orca captures the sequence dependencies of structures including chromatin compartments and topologically associating domains, as well as diverse types of interactions from CTCF-mediated to enhancer-promoter interactions and Polycomb-mediated interactions with cell-type specificity. Orca enables various applications including predicting structural variant effects on multiscale genome organization and it recapitulated effects of experimentally studied variants at varying sizes (300 bp to 90 Mb). Moreover, Orca enables in silico virtual screens to probe the sequence basis of 3D genome organization at different scales. At the submegabase scale, it predicted specific transcription factor motifs underlying cell-type-specific genome interactions. At the compartment scale, virtual screens of sequence activities suggest a model for the sequence basis of chromatin compartments with a prominent role of transcription start sites.},
