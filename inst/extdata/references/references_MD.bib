@@ -1,12 +1,73 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Mikhail Dozmorov at 2025-01-26 12:37:59 -0500 
+%% Created for Mikhail Dozmorov at 2025-02-07 06:25:15 -0500 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Hollmann:2025aa,
+	abstract = {Tabular data, spreadsheets organized in rows and columns, are ubiquitous across scientific fields, from biomedicine to particle physics to economics and climate science1,2. The fundamental prediction task of filling in missing values of a label column based on the rest of the columns is essential for various applications as diverse as biomedical risk models, drug discovery and materials science. Although deep learning has revolutionized learning from raw data and led to numerous high-profile success stories3-5, gradient-boosted decision trees6-9 have dominated tabular data for the past 20 years. Here we present the Tabular Prior-data Fitted Network (TabPFN), a tabular foundation model that outperforms all previous methods on datasets with up to 10,000 samples by a wide margin, using substantially less training time. In 2.8 s, TabPFN outperforms an ensemble of the strongest baselines tuned for 4 h in a classification setting. As a generative transformer-based foundation model, this model also allows fine-tuning, data generation, density estimation and learning reusable embeddings. TabPFN is a learning algorithm that is itself learned across millions of synthetic datasets, demonstrating the power of this approach for algorithm development. By improving modelling abilities across diverse fields, TabPFN has the potential to accelerate scientific discovery and enhance important decision-making in various domains.},
+	author = {Hollmann, Noah and M{\"u}ller, Samuel and Purucker, Lennart and Krishnakumar, Arjun and K{\"o}rfer, Max and Hoo, Shi Bin and Schirrmeister, Robin Tibor and Hutter, Frank},
+	date-added = {2025-02-05 12:05:34 -0500},
+	date-modified = {2025-02-05 12:05:34 -0500},
+	doi = {10.1038/s41586-024-08328-6},
+	journal = {Nature},
+	journal-full = {Nature},
+	mesh = {Datasets as Topic; Algorithms; Deep Learning; Data Accuracy},
+	month = {Jan},
+	number = {8045},
+	pages = {319-326},
+	pmc = {PMC11711098},
+	pmid = {39780007},
+	pst = {ppublish},
+	title = {Accurate predictions on small data with a tabular foundation model},
+	volume = {637},
+	year = {2025},
+	bdsk-url-1 = {https://doi.org/10.1038/s41586-024-08328-6}}
+
+@article{Torlay:2017aa,
+	abstract = {Our goal was to apply a statistical approach to allow the identification of atypical language patterns and to differentiate patients with epilepsy from healthy subjects, based on their cerebral activity, as assessed by functional MRI (fMRI). Patients with focal epilepsy show reorganization or plasticity of brain networks involved in cognitive functions, inducing 'atypical' (compared to 'typical' in healthy people) brain profiles. Moreover, some of these patients suffer from drug-resistant epilepsy, and they undergo surgery to stop seizures. The neurosurgeon should only remove the zone generating seizures and must preserve cognitive functions to avoid deficits. To preserve functions, one should know how they are represented in the patient's brain, which is in general different from that of healthy subjects. For this purpose, in the pre-surgical stage, robust and efficient methods are required to identify atypical from typical representations. Given the frequent location of regions generating seizures in the vicinity of language networks, one important function to be considered is language. The risk of language impairment after surgery is determined pre-surgically by mapping language networks. In clinical settings, cognitive mapping is classically performed with fMRI. The fMRI analyses allowing the identification of atypical patterns of language networks in patients are not sufficiently robust and require additional statistic approaches. In this study, we report the use of a statistical nonlinear machine learning classification, the Extreme Gradient Boosting (XGBoost) algorithm, to identify atypical patterns and classify 55 participants as healthy subjects or patients with epilepsy. XGBoost analyses were based on neurophysiological features in five language regions (three frontal and two temporal) in both hemispheres and activated with fMRI for a phonological (PHONO) and a semantic (SEM) language task. These features were combined into 135 cognitively plausible subsets and further submitted to selection and binary classification. Classification performance was scored with the Area Under the receiver operating characteristic curve (AUC). Our results showed that the subset SEM_LH BA_47-21 (left fronto-temporal activation induced by the SEM task) provided the best discrimination between the two groups (AUC of 91 $\pm$ 5%). The results are discussed in the framework of the current debates of language reorganization in focal epilepsy.},
+	author = {Torlay, L and Perrone-Bertolotti, M and Thomas, E and Baciu, M},
+	date-added = {2025-02-04 14:41:07 -0500},
+	date-modified = {2025-02-04 14:41:07 -0500},
+	doi = {10.1007/s40708-017-0065-7},
+	journal = {Brain Inform},
+	journal-full = {Brain informatics},
+	keywords = {Atypical; Epilepsy; Extreme Gradient Boosting; Language; ML; Machine learning; XGBoost},
+	month = {Sep},
+	number = {3},
+	pages = {159-169},
+	pmc = {PMC5563301},
+	pmid = {28434153},
+	pst = {ppublish},
+	title = {Machine learning-XGBoost analysis of language networks to classify patients with epilepsy},
+	volume = {4},
+	year = {2017},
+	bdsk-url-1 = {https://doi.org/10.1007/s40708-017-0065-7}}
+
+@article{Argelaguet:2018aa,
+	abstract = {Multi-omics studies promise the improved characterization of biological processes across molecular layers. However, methods for the unsupervised integration of the resulting heterogeneous data sets are lacking. We present Multi-Omics Factor Analysis (MOFA), a computational method for discovering the principal sources of variation in multi-omics data sets. MOFA infers a set of (hidden) factors that capture biological and technical sources of variability. It disentangles axes of heterogeneity that are shared across multiple modalities and those specific to individual data modalities. The learnt factors enable a variety of downstream analyses, including identification of sample subgroups, data imputation and the detection of outlier samples. We applied MOFA to a cohort of 200 patient samples of chronic lymphocytic leukaemia, profiled for somatic mutations, RNA expression, DNA methylation and ex vivo drug responses. MOFA identified major dimensions of disease heterogeneity, including immunoglobulin heavy-chain variable region status, trisomy of chromosome 12 and previously underappreciated drivers, such as response to oxidative stress. In a second application, we used MOFA to analyse single-cell multi-omics data, identifying coordinated transcriptional and epigenetic changes along cell differentiation.},
+	author = {Argelaguet, Ricard and Velten, Britta and Arnol, Damien and Dietrich, Sascha and Zenz, Thorsten and Marioni, John C and Buettner, Florian and Huber, Wolfgang and Stegle, Oliver},
+	date-added = {2025-02-04 14:26:20 -0500},
+	date-modified = {2025-02-04 14:26:20 -0500},
+	doi = {10.15252/msb.20178124},
+	journal = {Mol Syst Biol},
+	journal-full = {Molecular systems biology},
+	keywords = {data integration; dimensionality reduction; multi‐omics; personalized medicine; single‐cell omics},
+	mesh = {Antineoplastic Agents; Computational Biology; Computer Simulation; Datasets as Topic; Humans; Leukemia, Lymphocytic, Chronic, B-Cell; Models, Statistical; Oxidative Stress; Software; Transcriptome},
+	month = {Jun},
+	number = {6},
+	pages = {e8124},
+	pmc = {PMC6010767},
+	pmid = {29925568},
+	pst = {epublish},
+	title = {Multi-Omics Factor Analysis-a framework for unsupervised integration of multi-omics data sets},
+	volume = {14},
+	year = {2018},
+	bdsk-url-1 = {https://doi.org/10.15252/msb.20178124}}
 
 @article{Kopylova:2012aa,
 	abstract = {MOTIVATION: The application of next-generation sequencing (NGS) technologies to RNAs directly extracted from a community of organisms yields a mixture of fragments characterizing both coding and non-coding types of RNAs. The task to distinguish among these and to further categorize the families of messenger RNAs and ribosomal RNAs (rRNAs) is an important step for examining gene expression patterns of an interactive environment and the phylogenetic classification of the constituting species.
@@ -11393,9 +11454,9 @@ AVAILABILITY AND IMPLEMENTATION: featureCounts is available under GNU General Pu
 
 @article{Ramirez:2014aa,
 	abstract = {We present a Galaxy based web server for processing and visualizing deeply sequenced data. The web server's core functionality consists of a suite of newly developed tools, called deepTools, that enable users with little bioinformatic background to explore the results of their sequencing experiments in a standardized setting. Users can upload pre-processed files with continuous data in standard formats and generate heatmaps and summary plots in a straight-forward, yet highly customizable manner. In addition, we offer several tools for the analysis of files containing aligned reads and enable efficient and reproducible generation of normalized coverage files. As a modular and open-source platform, deepTools can easily be expanded and customized to future demands and developments. The deepTools webserver is freely available at http://deeptools.ie-freiburg.mpg.de and is accompanied by extensive documentation and tutorials aimed at conveying the principles of deep-sequencing data analysis. The web server can be used without registration. deepTools can be installed locally either stand-alone or as part of Galaxy.},
-	author = {Ram{\'\i}rez, Fidel and D{\"u}ndar, Friederike and Diehl, Sarah and Gr{\"u}ning, Bj{\"o}rn A and Manke, Thomas},
+	author = {Ramirez, Fidel and D{\"u}ndar, Friederike and Diehl, Sarah and Gr{\"u}ning, Bj{\"o}rn A and Manke, Thomas},
 	date-added = {2020-04-16 11:03:26 -0400},
-	date-modified = {2020-04-16 11:03:26 -0400},
+	date-modified = {2025-02-06 19:45:10 -0500},
 	doi = {10.1093/nar/gku365},
 	journal = {Nucleic Acids Res},
 	journal-full = {Nucleic acids research},
@@ -12111,25 +12172,6 @@ AVAILABILITY AND IMPLEMENTATION: BatchQC is available through Bioconductor: http
 	year = {2017},
 	bdsk-url-1 = {http://biorxiv.org/content/early/2017/04/19/128843.abstract}}
 
-@article{Torlay:2017aa,
-	abstract = {Our goal was to apply a statistical approach to allow the identification of atypical language patterns and to differentiate patients with epilepsy from healthy subjects, based on their cerebral activity, as assessed by functional MRI (fMRI). Patients with focal epilepsy show reorganization or plasticity of brain networks involved in cognitive functions, inducing `atypical'(compared to `typical'in healthy people) brain profiles. Moreover, some of these patients suffer from drug-resistant epilepsy, and they undergo surgery to stop seizures. The neurosurgeon should only remove the zone generating seizures and must preserve cognitive functions to avoid deficits. To preserve functions, one should know how they are represented in the patient's brain, which is in general different from that of healthy subjects. For this purpose, in the pre-surgical stage, robust and efficient methods are required to identify atypical from typical representations. Given the frequent location of regions generating seizures in the vicinity of language networks, one important function to be considered is language. The risk of language impairment after surgery is determined pre-surgically by mapping language networks. In clinical settings, cognitive mapping is classically performed with fMRI. The fMRI analyses allowing the identification of atypical patterns of language networks in patients are not sufficiently robust and require additional statistic approaches. In this study, we report the use of a statistical nonlinear machine learning classification, the Extreme Gradient Boosting (XGBoost) algorithm, to identify atypical patterns and classify 55 participants as healthy subjects or patients with epilepsy. XGBoost analyses were based on neurophysiological features in five language regions (three frontal and two temporal) in both hemispheres and activated with fMRI for a phonological (PHONO) and a semantic (SEM) language task. These features were combined into 135 cognitively plausible subsets and further submitted to selection and binary classification. Classification performance was scored with the Area Under the receiver operating characteristic curve (AUC). Our results showed that the subset SEM{\_}LH BA{\_}47-21 (left fronto-temporal activation induced by the SEM task) provided the best discrimination between the two groups (AUC of 91 $\pm$5{\%}). The results are discussed in the framework of the current debates of language reorganization in focal epilepsy.},
-	author = {Torlay, L. and Perrone-Bertolotti, M. and Thomas, E. and Baciu, M.},
-	da = {2017/09/01},
-	date-added = {2020-04-16 11:03:26 -0400},
-	date-modified = {2020-04-16 11:03:26 -0400},
-	doi = {10.1007/s40708-017-0065-7},
-	id = {Torlay2017},
-	isbn = {2198-4026},
-	journal = {Brain Informatics},
-	number = {3},
-	pages = {159--169},
-	title = {Machine learning--XGBoost analysis of language networks to classify patients with epilepsy},
-	ty = {JOUR},
-	url = {https://doi.org/10.1007/s40708-017-0065-7},
-	volume = {4},
-	year = {2017},
-	bdsk-url-1 = {https://doi.org/10.1007/s40708-017-0065-7}}
-
 @article{Zheng:2017aa,
 	abstract = {Characterizing the transcriptome of individual cells is fundamental to understanding complex biological systems. We describe a droplet-based system that enables 3' mRNA counting of tens of thousands of single cells per sample. Cell encapsulation, of up to 8 samples at a time, takes place in ∼6 min, with ∼50% cell capture efficiency. To demonstrate the system's technical performance, we collected transcriptome data from ∼250k single cells across 29 samples. We validated the sensitivity of the system and its ability to detect rare populations using cell lines and synthetic RNAs. We profiled 68k peripheral blood mononuclear cells to demonstrate the system's ability to characterize large immune populations. Finally, we used sequence variation in the transcriptome data to determine host and donor chimerism at single-cell resolution from bone marrow mononuclear cells isolated from transplant patients.},
 	author = {Zheng, Grace X Y and Terry, Jessica M and Belgrader, Phillip and Ryvkin, Paul and Bent, Zachary W and Wilson, Ryan and Ziraldo, Solongo B and Wheeler, Tobias D and McDermott, Geoff P and Zhu, Junjie and Gregory, Mark T and Shuga, Joe and Montesclaros, Luz and Underwood, Jason G and Masquelier, Donald A and Nishimura, Stefanie Y and Schnall-Levin, Michael and Wyatt, Paul W and Hindson, Christopher M and Bharadwaj, Rajiv and Wong, Alexander and Ness, Kevin D and Beppu, Lan W and Deeg, H Joachim and McFarland, Christopher and Loeb, Keith R and Valente, William J and Ericson, Nolan G and Stevens, Emily A and Radich, Jerald P and Mikkelsen, Tarjei S and Hindson, Benjamin J and Bielas, Jason H},
@@ -12399,26 +12441,6 @@ AVAILABILITY AND IMPLEMENTATION: BatchQC is available through Bioconductor: http
 	year = {2018},
 	bdsk-url-1 = {https://doi.org/10.1177/0023677217738268}}
 
-@article{Rappoport:2018aa,
-	abstract = {Recent high throughput experimental methods have been used to collect large biomedical omics datasets. Clustering of single omic datasets has proven invaluable for biological and medical research. The decreasing cost and development of additional high throughput methods now enable measurement of multi-omic data. Clustering multi-omic data has the potential to reveal further systems-level insights, but raises computational and biological challenges. Here, we review algorithms for multi-omics clustering, and discuss key issues in applying these algorithms. Our review covers methods developed specifically for omic data as well as generic multi-view methods developed in the machine learning community for joint clustering of multiple data types. In addition, using cancer data from TCGA, we perform an extensive benchmark spanning ten different cancer types, providing the first systematic comparison of leading multi-omics and multi-view clustering algorithms. The results highlight key issues regarding the use of single- versus multi-omics, the choice of clustering strategy, the power of generic multi-view methods and the use of approximated p-values for gauging solution quality. Due to the growing use of multi-omics data, we expect these issues to be important for future progress in the field.},
-	author = {Rappoport, Nimrod and Shamir, Ron},
-	date-added = {2020-04-16 11:03:26 -0400},
-	date-modified = {2020-04-16 11:03:26 -0400},
-	doi = {10.1093/nar/gky889},
-	journal = {Nucleic Acids Res},
-	journal-full = {Nucleic acids research},
-	mesh = {Algorithms; Bayes Theorem; Cluster Analysis; Computational Biology; Databases, Factual; Genomics; Humans; Machine Learning; Models, Statistical; Neoplasms; Probability; Prognosis; Proteomics},
-	month = {11},
-	number = {20},
-	pages = {10546-10562},
-	pmc = {PMC6237755},
-	pmid = {30295871},
-	pst = {ppublish},
-	title = {Multi-omic and multi-view clustering algorithms: review and cancer benchmark},
-	volume = {46},
-	year = {2018},
-	bdsk-url-1 = {https://doi.org/10.1093/nar/gky889}}
-
 @article{Karczewski:2019aa,
 	author = {Karczewski, Konrad J and Francioli, Laurent C and Tiao, Grace and Cummings, Beryl B and Alf{\"o}ldi, Jessica and Wang, Qingbo and Collins, Ryan L and Laricchia, Kristen M and Ganna, Andrea and Birnbaum, Daniel P and Gauthier, Laura D and Brand, Harrison and Solomonson, Matthew and Watts, Nicholas A and Rhodes, Daniel and Singer-Berk, Moriel and Seaby, Eleanor G and Kosmicki, Jack A and Walters, Raymond K and Tashman, Katherine and Farjoun, Yossi and Banks, Eric and Poterba, Timothy and Wang, Arcturus and Seed, Cotton and Whiffin, Nicola and Chong, Jessica X and Samocha, Kaitlin E and Pierce-Hoffman, Emma and Zappala, Zachary and O'Donnell-Luria, Anne H and Vallabh Minikel, Eric and Weisburd, Ben and Lek, Monkol and Ware, James S and Vittal, Christopher and Armean, Irina M and Bergelson, Louis and Cibulskis, Kristian and Connolly, Kristen M and Covarrubias, Miguel and Donnelly, Stacey and Ferriera, Steven and Gabriel, Stacey and Gentry, Jeff and Gupta, Namrata and Jeandet, Thibault and Kaplan, Diane and Llanwarne, Christopher and Munshi, Ruchi and Novod, Sam and Petrillo, Nikelle and Roazen, David and Ruano-Rubio, Valentin and Saltzman, Andrea and Schleicher, Molly and Soto, Jose and Tibbetts, Kathleen and Tolonen, Charlotte and Wade, Gordon and Talkowski, Michael E and , and Neale, Benjamin M and Daly, Mark J and MacArthur, Daniel G},
 	date = {2019/01/01},
@@ -12454,34 +12476,6 @@ AVAILABILITY AND IMPLEMENTATION: BatchQC is available through Bioconductor: http
 	volume = {47},
 	year = {2019},
 	bdsk-url-1 = {https://doi.org/10.1093/nar/gky1016}}
-
-@article{Argelaguet:2018aa,
-	annote = {doi: 10.15252/msb.20178124},
-	author = {Argelaguet, Ricard and Velten, Britta and Arnol, Damien and Dietrich, Sascha and Zenz, Thorsten and Marioni, John C and Buettner, Florian and Huber, Wolfgang and Stegle, Oliver},
-	booktitle = {Molecular Systems Biology},
-	da = {2018/06/01},
-	date = {2018/06/01},
-	date-added = {2020-04-16 11:03:26 -0400},
-	date-modified = {2020-04-16 11:03:26 -0400},
-	doi = {10.15252/msb.20178124},
-	isbn = {1744-4292},
-	journal = {Molecular Systems Biology},
-	journal1 = {Molecular Systems Biology},
-	journal2 = {Mol Syst Biol},
-	keywords = {data integration; dimensionality reduction; multi-omics; personalized medicine; single-cell omics},
-	m3 = {doi: 10.15252/msb.20178124},
-	month = {2019/09/29},
-	n2 = {Abstract Multi-omics studies promise the improved characterization of biological processes across molecular layers. However, methods for the unsupervised integration of the resulting heterogeneous data sets are lacking. We present Multi-Omics Factor Analysis (MOFA), a computational method for discovering the principal sources of variation in multi-omics data sets. MOFA infers a set of (hidden) factors that capture biological and technical sources of variability. It disentangles axes of heterogeneity that are shared across multiple modalities and those specific to individual data modalities. The learnt factors enable a variety of downstream analyses, including identification of sample subgroups, data imputation and the detection of outlier samples. We applied MOFA to a cohort of 200 patient samples of chronic lymphocytic leukaemia, profiled for somatic mutations, RNA expression, DNA methylation and ex vivo drug responses. MOFA identified major dimensions of disease heterogeneity, including immunoglobulin heavy-chain variable region status, trisomy of chromosome 12 and previously underappreciated drivers, such as response to oxidative stress. In a second application, we used MOFA to analyse single-cell multi-omics data, identifying coordinated transcriptional and epigenetic changes along cell differentiation.},
-	number = {6},
-	pages = {e8124},
-	publisher = {John Wiley \& Sons, Ltd},
-	title = {Multi-Omics Factor Analysis---a framework for unsupervised integration of multi-omics data sets},
-	ty = {JOUR},
-	url = {https://doi.org/10.15252/msb.20178124},
-	volume = {14},
-	year = {2018},
-	year1 = {2018},
-	bdsk-url-1 = {https://doi.org/10.15252/msb.20178124}}
 
 @article{Vermunt:2019aa,
 	abstract = {Imaging studies, high-resolution chromatin conformation maps, and genome-wide occupancy data of architectural proteins have revealed that genome topology is tightly intertwined with gene expression. Cross-talk between gene-regulatory elements is often organized within insulated neighborhoods, and regulatory cues that induce transcriptional changes can reshape chromatin folding patterns and gene positioning within the nucleus. The cause-consequence relationship of genome architecture and gene expression is intricate, and its molecular mechanisms are under intense investigation. Here, we review the interdependency of transcription and genome organization with emphasis on enhancer-promoter contacts in gene regulation.},
